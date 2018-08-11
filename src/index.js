@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './CSS/index.css';
-
 import Happy from './components/Happy';
 import Sleepy from './components/Sleepy';
 import Guilty from './components/Guilty';
-
-/import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 const BasicExample = () => (
@@ -27,8 +24,8 @@ const BasicExample = () => (
       <hr />
 
       <Route exact path="/" component={Happy} />
-      <Route path="/about" component={Sleepy} />
-      <Route path="/topics" component={Guilty} />
+      <Route path="/Sleepy" component={Sleepy} />
+      <Route path="/Guilty" component={Guilty} />
     </div>
   </Router>
 );
@@ -50,7 +47,7 @@ const Topics = ({ match }) => (
     <h2>Guilty</h2>
     <ul>
       <li>
-        <Link to={`${match.url}/rendering`}>Rendering with React</Link>
+        <Link to={`${match.url}/Happy`}>Rendering with React</Link>
       </li>
       <li>
         <Link to={`${match.url}/components`}>Components</Link>
@@ -75,4 +72,9 @@ const Topic = ({ match }) => (
   </div>
 );
 
-export default BasicExample;
+// export default BasicExample;
+
+
+ReactDOM.render(
+  <BasicExample/>, document.getElementById('root')
+);
