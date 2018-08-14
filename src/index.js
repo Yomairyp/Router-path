@@ -14,10 +14,10 @@ const BasicExample = () => (
           <Link to="/">Happy</Link>
         </li>
         <li>
-          <Link to="/about">Sleepy</Link>
+          <Link to="/Sleepy">Sleepy</Link>
         </li>
         <li>
-          <Link to="/topics">Guilty</Link>
+          <Link to="/Guilty">Guilty</Link>
         </li>
       </ul>
 
