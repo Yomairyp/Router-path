@@ -10,6 +10,9 @@ const BasicExample = () => (
   <Router>
     <div>
       <ul>
+      <li>
+          <Link to="/Home">Home</Link>
+        </li>
         <li>
           <Link to="/">Happy</Link>
         </li>
@@ -22,7 +25,7 @@ const BasicExample = () => (
       </ul>
 
       <hr />
-
+      <Route exact path="/" component={Home} />
       <Route exact path="/" component={Happy} />
       <Route path="/Sleepy" component={Sleepy} />
       <Route path="/Guilty" component={Guilty} />
